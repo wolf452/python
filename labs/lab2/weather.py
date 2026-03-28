@@ -5,7 +5,7 @@ import json
 print("Hello World")
 
 city = input("Can you put your city? ")
-api = "e7cca0c26cdd7429fb2f83cef39fce3b"
+api = "your-token"
 url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}&units=metric"
 
 req = requests.get(url)
