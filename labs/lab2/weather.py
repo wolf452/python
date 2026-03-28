@@ -11,8 +11,8 @@ url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api}&unit
 req = requests.get(url)
 data = req.json()
 
-conver=json.dumps(data, indent=4)
-print(conver)
+convert=json.dumps(data, indent=4)
+print(convert)
 
 if req.status_code == 200:
     date= datetime.datetime.now()
