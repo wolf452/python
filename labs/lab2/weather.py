@@ -16,7 +16,7 @@ print(conver)
 
 if req.status_code == 200:
     date= datetime.datetime.now()
-    print(date)
+    print(f"Date & Time:{date}")
     temp = data["main"]["temp"]
     wind = data["wind"]["speed"]
     description = data['weather'][0]['description']
